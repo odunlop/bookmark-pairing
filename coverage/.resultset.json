@@ -10,6 +10,13 @@
           1,
           1,
           null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
           1,
           1,
           1,
@@ -21,7 +28,16 @@
       "/Users/orladunlop/Projects/Week-6/bookmarks/spec/features/viewing_bookmarks_spec.rb": {
         "lines": [
           1,
+          null,
           1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
           1,
           null,
           1,
@@ -32,6 +48,6 @@
         ]
       }
     },
-    "timestamp": 1642517863
+    "timestamp": 1642520619
   }
 }
