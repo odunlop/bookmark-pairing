@@ -1,4 +1,4 @@
-ENV["RACK_ENV"] = "test"
+ENV["ENVIRONMENT"] = "test"
 
 require_relative '../app'
 require_relative './setup_test_database'
@@ -8,7 +8,6 @@ require 'capybara/rspec'
 require 'rspec'
 require 'simplecov'
 require 'simplecov-console'
-
 
 Capybara.app = BookmarkManager
 

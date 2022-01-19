@@ -1,26 +1,19 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/orladunlop/Projects/Week-6/bookmarks/spec/features/unit/bookmark_spec.rb": {
+      "/Users/orladunlop/Projects/Week-6/bookmarks/spec/features/create_bookmark_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
           1,
-          1,
-          null,
           null,
           1,
           1,
           1,
           null,
           1,
-          null,
-          1,
-          1,
-          1,
-          null,
           null,
           null
         ]
@@ -46,8 +39,40 @@
           null,
           null
         ]
+      },
+      "/Users/orladunlop/Projects/Week-6/bookmarks/spec/unit/bookmark_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1642520619
+    "timestamp": 1642603570
   }
 }
