@@ -12,6 +12,7 @@
           1,
           1,
           1,
+          1,
           null,
           1,
           null,
@@ -21,7 +22,6 @@
       "/Users/orladunlop/Projects/Week-6/bookmarks/spec/features/viewing_bookmarks_spec.rb": {
         "lines": [
           1,
-          null,
           null,
           1,
           1,
@@ -43,36 +43,53 @@
       "/Users/orladunlop/Projects/Week-6/bookmarks/spec/unit/bookmark_spec.rb": {
         "lines": [
           1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
           1,
           null,
           1,
           1,
           1,
-          null,
+          1,
           null,
           null,
           1,
           1,
           1,
           null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
           1,
           null,
           null,
           null
         ]
+      },
+      "/Users/orladunlop/Projects/Week-6/bookmarks/spec/database_helpers.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1642604243
+    "timestamp": 1642611284
   }
 }

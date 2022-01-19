@@ -1,1 +1,2 @@
 CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAT((60)));
+ALTER TABLE bookmarks ADD COLUMN title VARCHAR(60);

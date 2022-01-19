@@ -6,8 +6,9 @@ feature 'Creating bookmarks' do
 
     visit('/bookmarks/new')
     fill_in "url", with: 'http://twitch.tv'
+    fill_in "title", with: "Twitch"
     click_button "Save"
 
-    expect(page).to have_content 'http://twitch.tv'
+    expect(page).to have_link('Twitch', href: 'http://twitch.tv')
   end
 end
