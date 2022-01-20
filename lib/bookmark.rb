@@ -4,7 +4,7 @@ class Bookmark
   attr_reader :id, :title, :url
 
   def initialize(id:, title:, url:)
-    @id  = id
+    @id = id
     @title = title
     @url = url
   end
@@ -16,8 +16,9 @@ class Bookmark
       connection = PG.connect(dbname: 'bookmark_manager')
     end
     result = connection.exec("SELECT * FROM bookmarks;")
-    # Below we wrap each returned entry from our SQL search by making it into a new Bookmark instance
-    # this means we can access it via the attr_reader and just call bookmark.title, etc.
+    # Below we wrap each returned entry from our SQL search by making it into a 
+    # new Bookmark instance this means we can access it via the attr_reader and 
+    # just call bookmark.title, etc.
     result.map do |bookmark|
       Bookmark.new(id: bookmark['id'], title: bookmark['title'], url: bookmark['url'])
     end
@@ -39,5 +40,15 @@ class Bookmark
       "INSERT INTO bookmarks (url, title) VALUES($1, $2) RETURNING id, title, url;", [url, title]
     )
     Bookmark.new(id: result[0]['id'], title: result[0]['title'], url: result[0]['url'])
+  end
+
+  def self.delete(id:)
+    if ENV['ENVIRONMENT'] == 'test'
+      connection = PG.connect(dbname: 'bookmark_manager_test')
+    else
+      connection = PG.connect(dbname: 'bookmark_manager')
+    end
+    
+    connection.exec_params("DELETE FROM bookmarks WHERE id = $1;", [id])
   end
 end
