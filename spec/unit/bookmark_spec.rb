@@ -27,7 +27,7 @@ describe Bookmark do
       persisted_data = persisted_data(id: bookmark.id)
 
       expect(bookmark).to be_a Bookmark
-      expect(bookmark.id).to eq persisted_data.first['id']
+      expect(bookmark.id).to eq persisted_data.first['id'] # The persisted data object is a hash of the SQL query return thus why we're calling ['id']
       expect(bookmark.title).to eq 'Twitch'
       expect(bookmark.url).to eq 'http://www.twitch.tv'
     end
